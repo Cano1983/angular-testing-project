@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { TaskListComponent } from './task-list/task-list.component';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,9 +10,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-testing-project';
+  
 
-  addTask(task: string) {
+  
+  
 
+  addTask(task: void) {
+    this.push(this)
+  
+    
+    
   }
 
   deleteTask(task: string) {
